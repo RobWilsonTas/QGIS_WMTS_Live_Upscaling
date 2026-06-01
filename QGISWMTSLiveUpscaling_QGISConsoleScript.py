@@ -50,7 +50,7 @@ zoomLevelScales = [559082264.0287178, 279541132.0143589, 139770566.0071794, 6988
 
 #Creating a QGIS layer from the source
 xyzLayerUrl = "file:///" + upscaledTilesFolder + "/{z}/{x}/{y}.png"
-liveRasterLayer = QgsRasterLayer("type=xyz&url=" + xyzLayerUrl, "List Topo Base 2x Scale", "wms")
+liveRasterLayer = QgsRasterLayer("type=xyz&url=" + xyzLayerUrl, "Basemap 2x Scale", "wms")
 QgsProject.instance().addMapLayer(liveRasterLayer)
 
 #Making some multithreading stuff to not lag anything
